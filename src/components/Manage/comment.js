@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import HeadTitle from "../Shared/headTitle";
+import {HeadTitle, HeadTab} from "../Shared/breadCrumb";
 
 export default class Comment extends Component{
     render(){

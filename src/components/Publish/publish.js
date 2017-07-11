@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Route, Redirect, NavLink } from 'react-router-dom';
-import HeadTitle from "../Shared/headTitle";
+import {HeadTitle} from "../Shared/breadCrumb";
 import PublishArticle from './article';
 import PublishVideo from './video';
 import PublishAtlas from './atlas';
