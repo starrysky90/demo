@@ -1,0 +1,120 @@
+.layout{
+    .wrapper{
+        width:1000px;
+        overflow:hidden;
+        margin:0 auto;
+    }
+
+    .header{
+        height:58px;
+        background: $white;
+        border-bottom:1px solid #e5e5e5;
+        margin-bottom:24px;
+    }
+
+    .main{
+        display:table;
+        .sider{
+            width: 190px;
+            border-right: 1px solid #e5e5e5;
+            display: table-cell;
+            height: 800px;
+            font-size: 18px;
+            color: #666;
+            background: #FBFBFB;
+            vertical-align: top;
+
+            .menu{
+                width:190px;
+                .sub_menu{
+                    width: 190px;
+                    padding: 17px 0 21px 20px;
+                    border-bottom: 1px solid #e5e5e5;
+                    position:relative;
+                    display:block;
+                    font-size:18px;
+                    overflow:hidden;
+                }
+                .sub_menu_active{
+                    background:$white;
+                    width:191px;
+                    color:$red;
+                    &:before{
+                        width:4px;
+                        height:100%;
+                        content:"";
+                        position:absolute;
+                        left:0;
+                        top:0;
+                        background:$red;
+                        animation: slidedown 0.2s linear;
+                        -webkit-animation: slidedown 0.2s linear;
+                    }
+                }
+            }
+
+            a{
+                color:$grey-darker;
+                &:hover{
+                    color:$red;
+                }
+            }
+            
+        }
+        .content{
+            width: 810px;
+            display: table-cell;
+            padding: 20px 25px 70px;
+            background: #fff;
+            vertical-align: top;
+            
+            .head_title{
+                overflow:hidden;
+                .title{
+                    font-size:24px;
+                    vertical-align:middle;
+                }
+                &:before{
+                    content:"";
+                    display:inline-block;
+                    height:30px;
+                    width:4px;
+                    background:$red;
+                    margin-right:10px;
+                    vertical-align: middle;
+                }
+                &:after{
+                    content:"";
+                    display:block;
+                    height:1px;
+                    background:$borderColor;
+                    margin-top:10px;
+                }
+                .tab{
+                    float:right;
+                    margin-top:19px;
+                    .item{
+                        margin-right:15px;
+                        padding-bottom:5px;
+                        display:inline-block;
+                    }
+                    .item_active{
+                        border-bottom:2px solid $red;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer{
+        height:80px;
+        margin-top:30px;
+        background:$grey-darkest;
+        color:$white;
+        color:$grey;
+        padding-top:20px;
+        *{
+            font-size:12px;
+        }
+    }
+}

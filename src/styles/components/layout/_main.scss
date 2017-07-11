@@ -1,0 +1,52 @@
+.wrapper{
+    width:1000px;
+    overflow:hidden;
+    margin:0 auto;
+}
+
+.main{
+        display:flex;
+        flex-flow:row wrap;
+        .content{
+            width: 810px;
+            padding: 20px 25px 70px;
+            background: #fff;
+            vertical-align: top;
+            
+            .head_title{
+                overflow:hidden;
+                .title{
+                    font-size:24px;
+                    vertical-align:middle;
+                }
+                &:before{
+                    content:"";
+                    display:inline-block;
+                    height:30px;
+                    width:4px;
+                    background:$red;
+                    margin-right:10px;
+                    vertical-align: middle;
+                }
+                &:after{
+                    content:"";
+                    display:block;
+                    height:1px;
+                    background:$borderColor;
+                    margin-top:10px;
+                }
+                .tab{
+                    float:right;
+                    margin-top:19px;
+                    .item{
+                        margin-right:15px;
+                        padding-bottom:5px;
+                        display:inline-block;
+                    }
+                    .item_active{
+                        border-bottom:2px solid $red;
+                    }
+                }
+            }
+        }
+    }
